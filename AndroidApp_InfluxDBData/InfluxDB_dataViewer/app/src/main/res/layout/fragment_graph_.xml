@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Graph_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/FragmentsTitleTopMargin"
+            android:layout_marginBottom="@dimen/LoginEditTextMargin_Vertical"
+            android:layout_marginHorizontal="@dimen/LoginEditTextMargin_Horizontal"
+            android:text="Graph"
+            android:textSize="@dimen/FragmentsTitleTextSize"
+            android:fontFamily="@font/nexa_heavy"
+            android:textColor="@color/black"
+            android:id="@+id/Graph_Title"
+            ></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordered_connered_rectangle_shape"
+            android:layout_marginHorizontal="@dimen/LoginEditTextMargin_Horizontal"
+            android:layout_marginVertical="@dimen/LoginEditTextMargin_Vertical"
+            android:id="@+id/Graph_GraphContainer"
+            android:layout_below="@id/Graph_Title"
+            >
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/GraphInnerMargin"
+                android:id="@+id/Graph_LineChart"
+                ></com.github.mikephil.charting.charts.LineChart>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

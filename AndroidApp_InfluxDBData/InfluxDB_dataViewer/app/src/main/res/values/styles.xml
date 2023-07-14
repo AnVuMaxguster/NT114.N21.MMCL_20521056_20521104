@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerTheme" parent="android:Widget.Material.Spinner.Underlined">
+        <item name="android:background">@drawable/spinnerbg
+        </item>
+        <item name="android:popupBackground">@drawable/spinnerbg
+        </item>
+    </style>
+</resources>

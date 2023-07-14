@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InfluxDB_dataViewer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // Temp categories
+    <string name="frozen">Frozen</string>
+    <string name="refrigerated">Refrigerated</string>
+    <string name="cool">Cool</string>
+    <string name="ambient">Ambient</string>
+    <string name="warm">Warm</string>
+    <string name="excessive_heat">Excessive heat</string>
+    <string name="very_hot">Very hot</string>
+    <string name="extreme">Extreme</string>
+</resources>

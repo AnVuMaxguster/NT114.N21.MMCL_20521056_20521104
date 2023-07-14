@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Information_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Information_Title"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/nexa_heavy"
+            android:textSize="@dimen/TitleTextSize"
+            android:text="Infomation"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/CommonFragment_TitleTopMargin"
+            android:layout_marginHorizontal="@dimen/CommonFragment_TitleHorizontalMargin"
+            android:layout_marginBottom="@dimen/CommonFragment_VerticalMargin"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Information_BoardContainer"
+            android:layout_marginHorizontal="@dimen/CommonFragment_HorizontalMargin"
+            android:layout_marginVertical="@dimen/CommonFragment_VerticalMargin"
+            android:padding="10dp"
+            android:background="@drawable/conner_shape"
+            android:backgroundTint="@color/GrayTransparent"
+            android:layout_below="@id/Information_Title"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Information_BoardsRecyclerview"
+                ></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

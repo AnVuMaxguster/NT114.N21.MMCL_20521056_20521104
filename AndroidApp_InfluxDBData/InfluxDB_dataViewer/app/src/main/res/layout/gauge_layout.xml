@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/LoginEditTextMargin_Horizontal"
+    >
+    <com.ekn.gruzer.gaugelibrary.ArcGauge
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/gauge_ArcGauge"
+        android:visibility="invisible"
+        ></com.ekn.gruzer.gaugelibrary.ArcGauge>
+    <com.ekn.gruzer.gaugelibrary.HalfGauge
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/gauge_HalfGauge"
+        android:visibility="invisible"
+        ></com.ekn.gruzer.gaugelibrary.HalfGauge>
+    <TextView
+        android:id="@+id/gauge_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nexa_extralight"
+        android:text="Temp status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/FragmentsNormalTextSize"
+        android:layout_below="@id/gauge_ArcGauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nexa_heavy"
+        android:text="Temperature"
+        android:textColor="@color/black"
+        android:textSize="@dimen/FragmentsNormalTextSize"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gauge_Measurement"
+        android:layout_below="@id/gauge_Status"
+        ></TextView>
+</RelativeLayout>
